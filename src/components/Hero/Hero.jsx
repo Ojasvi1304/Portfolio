@@ -10,7 +10,7 @@ export default function Hero() {
           className="animate-fade-up text-xs uppercase tracking-[0.18em] text-teal font-semibold mb-6"
           style={{ animationDelay: '0ms' }}
         >
-          Full Stack Developer
+          Computer Engineering Student
         </p>
 
         {/* Name */}
@@ -18,7 +18,7 @@ export default function Hero() {
           className="animate-fade-up text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-ink dark:text-[#E8E3DB] mb-5 leading-tight"
           style={{ animationDelay: '100ms' }}
         >
-          Your Name
+          Ojasvi Jaiswal
         </h1>
 
         {/* Role subtitle */}
@@ -26,7 +26,7 @@ export default function Hero() {
           className="animate-fade-up text-lg md:text-xl text-ink-muted dark:text-[#9A958D] mb-10 max-w-xl leading-relaxed"
           style={{ animationDelay: '200ms' }}
         >
-          Building elegant digital experiences with clean code and thoughtful design.
+          Building modern web applications and exploring AI-powered technologies.
         </p>
 
         {/* CTAs */}
@@ -44,7 +44,7 @@ export default function Hero() {
           style={{ animationDelay: '400ms' }}
         >
           <a
-            href="https://github.com"
+            href="https://github.com/Ojasvi1304"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -55,7 +55,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ojasvi-jaiswal"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

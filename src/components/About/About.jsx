@@ -15,9 +15,13 @@ export default function About() {
             About Me
           </h2>
           <div className="w-8 h-px bg-teal opacity-50 mt-5 mb-8" />
-          <p className="text-lg leading-relaxed text-ink-muted dark:text-[#9A958D]">
-            {about.bio}
-          </p>
+          <div className="space-y-4">
+            {about.bio.map((para, i) => (
+              <p key={i} className="text-lg leading-relaxed text-ink-muted dark:text-[#9A958D]">
+                {para}
+              </p>
+            ))}
+          </div>
         </div>
 
         {/* Right: 2×2 stat grid */}

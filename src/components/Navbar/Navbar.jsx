@@ -12,13 +12,8 @@ export default function Navbar({ isDark, onToggleDark }) {
       <nav className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5 group">
-          <span className="text-lg font-black text-teal group-hover:opacity-80 transition-opacity">
-            &lt;/&gt;
-          </span>
-          <span className="font-semibold text-ink dark:text-[#E8E3DB] hidden sm:block tracking-tight">
-            Portfolio
-          </span>
+        <a href="#" className="font-bold text-xl tracking-tight text-ink dark:text-[#E8E3DB] hover:text-teal transition-colors duration-200">
+          Ojasvi
         </a>
 
         {/* Desktop nav links */}
