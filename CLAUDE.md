@@ -28,13 +28,14 @@ Single-page scroll portfolio — no routing library. All sections live on one pa
 src/
   App.jsx                     # layout shell — imports and assembles all section components
   main.jsx                    # entry point
-  index.css                   # only: @import "tailwindcss"
+  index.css                   # @import "tailwindcss" + @custom-variant dark + custom keyframes
   assets/images/              # images imported as ES modules (Vite hashes at build time)
   data/                       # static JS content files — edit these to update portfolio data
     nav.js                    # navLinks[] — single source of truth for navbar + scroll-spy
     projects.js / skills.js / education.js / certifications.js
   hooks/
     useScrollSpy.js           # IntersectionObserver hook; returns the active section id
+    useInView.js              # one-shot IntersectionObserver hook for scroll fade-in animations
   components/
     common/                   # shared UI: SectionWrapper, SectionTitle, Button, Badge
     Navbar/ Hero/ About/ Skills/ Projects/ Education/ Certifications/ Contact/ Footer/
@@ -48,5 +49,8 @@ public/
 - **`nav.js` is the single source of truth** — `Navbar` iterates `navLinks` for links; `useScrollSpy` uses the same `href` values (strip `#`) as section IDs. Add/remove a section only here.
 - **`SectionWrapper`** wraps every section and sets the `id` attribute that makes anchor scrolling work. Always use it for new sections.
 - **No per-component CSS files** — styling is done entirely with Tailwind utility classes in JSX.
+- **Tailwind v4 class names**: use `bg-linear-to-r` (not `bg-gradient-to-r`), `bg-clip-text` for gradient text. Dark mode uses `@custom-variant dark` (class-based, toggled via `.dark` on `<html>`).
+- **Dark mode state** lives in `App.jsx` — `isDark` + `onToggleDark` are passed as props to `Navbar`. All other components use `dark:` variants directly.
+- **`SectionWrapper`** puts background colors on the outer `<section>` (full-width) and constrains content width in an inner `<div>`. Pass `className` for full-bleed backgrounds (e.g. `bg-slate-50 dark:bg-slate-900`).
 - Images in `src/assets/images/` are imported as ES modules. SVG icons in `public/` are referenced via the sprite pattern at runtime.
 - The React Compiler is intentionally not enabled (see README for how to add it).
