@@ -8,7 +8,7 @@ const CERT_ACCENTS = ['#C17357', '#8AA393', '#83A2BD']
 export default function Certifications() {
   return (
     <SectionWrapper id="certifications">
-      <SectionTitle overline="Continuous Learning" title="Certifications" />
+      <SectionTitle overline="Continuous Learning" title="Certifications" subtitle="Courses and certifications that have strengthened my technical foundation." />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
         {certifications.map((cert, i) => (
           <CertificationCard

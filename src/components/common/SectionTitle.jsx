@@ -1,6 +1,6 @@
 export default function SectionTitle({ title, subtitle, overline }) {
   return (
-    <div className="mb-12 text-center">
+    <div className="mb-10 text-center">
       {overline && (
         <p className="text-xs font-semibold uppercase tracking-widest text-teal mb-3">
           {overline}

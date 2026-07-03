@@ -6,7 +6,7 @@ import { education } from '../../data/education'
 export default function Education() {
   return (
     <SectionWrapper id="education" className="bg-[#F4F2EE] dark:bg-[#242220]">
-      <SectionTitle overline="Academic Background" title="Education" />
+      <SectionTitle overline="Academic Background" title="Education" subtitle="My academic journey and continuous learning." />
       <div className="relative max-w-2xl mx-auto">
         {/* Vertical connecting line */}
         <div className="absolute left-3 top-3 bottom-0 w-px bg-border-warm dark:bg-[#38352F]" />

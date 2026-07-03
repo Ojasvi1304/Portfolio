@@ -3,7 +3,7 @@ import { navLinks } from '../../data/nav'
 export default function Footer() {
   return (
     <footer className="bg-ink dark:bg-[#141210]">
-      <div className="max-w-5xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-6 py-10">
 
         {/* Top grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pb-8 border-b border-[#38352F]">

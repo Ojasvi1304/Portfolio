@@ -15,9 +15,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Expense Tracker',
-    description: 'A React-based expense tracker that allows users to add, edit, and manage expenses through a clean and responsive interface.',
-    techStack: ['React', 'JavaScript'],
+    title: 'Online Movie Ticket Booking',
+    description: 'A movie ticket booking system inspired by modern cinema booking platforms, allowing users to browse movies, select seats, and simulate reservations.',
+    techStack: ['HTML','CSS','JavaScript','Node.js'],
     liveUrl: '',
     repoUrl: '', // TODO: Add GitHub URL
     imageUrl: '',
@@ -29,15 +29,15 @@ export const projects = [
     description: 'A responsive website designed for an ice cream brand with emphasis on product presentation, clean layouts, and user experience.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: '',
-    repoUrl: 'https://github.com/sayeewagh-dotcom/Dairich-Icecream-Portal.git',
+    repoUrl: '',
     imageUrl: '',
     featured: false,
   },
   {
     id: 4,
-    title: 'Online Movie Ticket Booking',
-    description: 'A movie ticket booking system inspired by modern cinema booking platforms, allowing users to browse movies, select seats, and simulate reservations.',
-    techStack: ['TODO: Add tech stack'],
+    title: 'Expense Tracker',
+    description: 'A React-based expense tracker that allows users to add, edit, and manage expenses through a clean and responsive interface.',
+    techStack: ['React', 'JavaScript'],
     liveUrl: '',
     repoUrl: '', // TODO: Add GitHub URL
     imageUrl: '',

@@ -8,7 +8,7 @@ const ACCENTS = ['terracotta', 'sage', 'dusty', 'lavender', 'pale']
 export default function Skills() {
   return (
     <SectionWrapper id="skills" className="bg-[#F4F2EE] dark:bg-[#242220]">
-      <SectionTitle overline="What I Know" title="Skills" />
+      <SectionTitle overline="What I Know" title="Skills" subtitle="Technologies I've worked with and areas I'm currently exploring." />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {skills.map((group, i) => (
           <SkillCard

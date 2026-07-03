@@ -2,7 +2,7 @@ import Button from '../common/Button'
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-cream dark:bg-[#1C1A17]">
+    <section aria-label="Introduction" className="min-h-screen flex flex-col items-center justify-center bg-cream dark:bg-[#1C1A17]">
       <div className="flex flex-col items-center text-center px-6 max-w-3xl mx-auto">
 
         {/* Overline label */}

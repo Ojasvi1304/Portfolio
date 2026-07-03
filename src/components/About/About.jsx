@@ -4,7 +4,7 @@ import { about } from '../../data/about'
 export default function About() {
   return (
     <SectionWrapper id="about">
-      <div className="grid md:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+      <div className="grid md:grid-cols-[3fr_2fr] gap-10 lg:gap-12 items-start">
 
         {/* Left: editorial intro */}
         <div>
@@ -14,8 +14,8 @@ export default function About() {
           <h2 className="text-4xl font-bold tracking-tight text-ink dark:text-[#E8E3DB]">
             About Me
           </h2>
-          <div className="w-8 h-px bg-teal opacity-50 mt-5 mb-8" />
-          <div className="space-y-4">
+          <div className="w-8 h-px bg-teal opacity-50 mt-4 mb-6" />
+          <div className="space-y-3">
             {about.bio.map((para, i) => (
               <p key={i} className="text-lg leading-relaxed text-ink-muted dark:text-[#9A958D]">
                 {para}

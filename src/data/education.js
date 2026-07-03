@@ -9,4 +9,12 @@ export const education = [
     endYear: '2028',
     description: 'Current CGPA: 9.59',
   },
+  {
+    id: 2,
+    institution: 'Centre Point School',
+    field: 'Science',
+    startYear: '2021',
+    endYear: '2023',
+    description: 'Percentage: 86.4',
+  },
 ]
