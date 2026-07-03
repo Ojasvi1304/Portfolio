@@ -6,9 +6,9 @@ import { certifications } from '../../data/certifications'
 export default function Certifications() {
   return (
     <SectionWrapper id="certifications">
-      <SectionTitle title="Certifications" />
-      <div className="flex flex-col gap-4 max-w-2xl mx-auto">
-        {certifications.map((cert) => (
+      <SectionTitle overline="Continuous Learning" title="Certifications" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto">
+        {certifications.map(cert => (
           <CertificationCard key={cert.id} {...cert} />
         ))}
       </div>
